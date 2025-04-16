@@ -69,7 +69,7 @@
         <groovy.version>2.4.21</groovy.version>
         <gpg.plugin.version>1.6</gpg.plugin.version>
         <broadleaf-presentation.version>1.1.6-GA</broadleaf-presentation.version>
-        <hsqldb.database.starter.version>2.0.4-GA</hsqldb.database.starter.version>
+        <hsqldb.database.starter.version>2.0.5-GA</hsqldb.database.starter.version>
         <closure.compiler.version>v20200830</closure.compiler.version>
         <hibernate.version>5.3.37.Final</hibernate.version>
         <hibernate-validator.version>6.0.23.Final</hibernate-validator.version>
