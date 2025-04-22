@@ -48,6 +48,7 @@
         <spring.boot.version>2.7.18</spring.boot.version>
         <jackson-bom.version>2.18.3</jackson-bom.version>
         <lombok.version>1.18.38</lombok.version>
+        <logback.version>1.2.13</logback.version>
         <maven.source.plugin.version>2.4</maven.source.plugin.version>
         <geb.version>1.0</geb.version>
         <spock.core.version>1.1-groovy-2.4</spock.core.version>
