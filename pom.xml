@@ -633,6 +633,21 @@
                         <artifactId>xml-apis</artifactId>
                         <groupId>xml-apis</groupId>
                     </exclusion>
+                    <exclusion>
+                        <groupId>commons-beanutils</groupId>
+                        <artifactId>commons-beanutils</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>1.11.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
                 </exclusions>
             </dependency>
             <dependency>
@@ -649,17 +664,6 @@
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
                 <version>1.2</version>
-            </dependency>
-            <dependency>
-                <groupId>commons-beanutils</groupId>
-                <artifactId>commons-beanutils</artifactId>
-                <version>1.11.0</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>commons-cli</groupId>
@@ -1008,15 +1012,25 @@
                     </exclusion>
                     <exclusion>
                         <groupId>org.eclipse.jetty.http2</groupId>
-                        <artifactId>http2-common</artifactId>
+                        <artifactId>http2-client</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.eclipse.jetty.http2</groupId>
+                        <artifactId>http2-http-client-transport</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
             <!-- Override http2-client version coming from solr-->
             <dependency>
                 <groupId>org.eclipse.jetty.http2</groupId>
-                <artifactId>http2-common</artifactId>
+                <artifactId>http2-parent</artifactId>
                 <version>11.0.25</version>
+            </dependency>
+            <!-- Override io.netty version coming from zookeeper -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-parent</artifactId>
+                <version>4.1.122.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.xerial.snappy</groupId>
